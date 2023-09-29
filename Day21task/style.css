@@ -1,0 +1,69 @@
+/* Reset default padding, margin, and box-sizing for all elements */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the navigation section */
+.navi{
+    background-color: grey;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+}
+
+/* Styling for navigation links */
+nav, .link{
+    margin-right: 10px;
+    text-decoration: none;  
+    color: white;
+}
+
+/* Styling for the container holding grid items */
+.container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px 15px;
+    /* width: 100%; */
+    justify-content: space-between;
+}
+
+/* Styling for grid items and images */
+.item, img{
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Styling for the footer section */
+footer{
+    background-color: grey;
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+/* Media query for screens with a maximum width of 600px */
+@media(max-width:600px){
+    /* Adjust the container layout for smaller screens */
+    .container{
+        margin: 20px;
+        display: grid;
+        grid-template-columns:  auto;
+        gap: 15px 15px;
+        /* width: 100%; */
+        justify-content: space-between;
+    }
+   
+    /* Modify grid items and images for smaller screens */
+    .item, img{
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    } 
+}

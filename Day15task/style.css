@@ -1,0 +1,103 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Center-align the main heading and set its color */
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+/* Define custom CSS variables */
+:root {
+    --main-color: #2db480dc; /* Main background color */
+    --primary-color: #b46969dc; /* Primary background color */
+    --footer-color: linear-gradient(to left, #733a5a, 80%, #b579ad40, #733a5a); /* Footer background gradient */
+    --main-font: 40px; /* Main font size */
+    --padding: 1.5rem; /* Common padding */
+}
+
+/* Header section styles */
+.head {
+    background-color: var(--main-color);
+    margin: 3%;
+}
+
+/* Additional styling for the main heading */
+h1 {
+    padding: var(--padding);
+}
+
+/* List styles */
+ul {
+    background-color: var(--primary-color);
+    padding: 10% 0 8% 2%;
+    line-height: 0.2;
+    color: white;
+    font-size: 20px;
+}  
+
+/* List item styles */
+li {
+    padding: 50px 0 0 0;
+}   
+
+/* Reset additional padding for heading elements */
+.heading {
+    padding: 0;
+}
+
+/* Table header styles */
+th {
+    height: 30px;
+    background-color: var(--main-color);
+    padding: 1.2rem;
+}
+
+/* Table and table data (td) styles */
+table, td {
+    border: none;
+    padding: 0.5rem;
+}
+
+/* Additional styling for the table */
+table {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 20px;
+}
+
+/* Table data cell styles */
+td {
+    height: 50px;
+    border: 1px solid grey;
+}
+
+/* Reset border-collapse and border-width for table rows */
+tr {
+    border-collapse: collapse;
+    border-width: none;
+}
+
+/* Reset additional padding for heading elements */
+.heading {
+    padding-bottom: 0;
+}
+
+/* Secondary heading styles */
+.heading-2 {
+    margin: 10% 3% 0;  
+    font-size: var(--main-font);
+}
+
+/* Footer styles */
+footer {
+    background: var(--footer-color);
+    text-align: center;
+    padding: 2%;
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 3%;
+}

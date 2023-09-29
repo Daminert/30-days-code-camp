@@ -1,0 +1,47 @@
+/* Center-align the text in the body */
+body {
+    text-align: center;
+}
+
+/* Style the main heading (h1) with a gradient background and padding */
+h1 {
+    background: linear-gradient(to left, #528c64, 20%, #5d8c6f);
+    padding: 5%;
+    color: whitesmoke;
+}
+
+/* Style the form with margins, padding, and a gradient background */
+form {
+    margin: 15%;
+    padding: 5%;
+    background: linear-gradient(to right, #2aa676, 10%, #a6836f);
+}
+
+/* Style the labels with margins, width, font size, and color */
+.first {
+    margin: 1.5rem 70% 0.5rem 0;
+    width: 1.5rem;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+/* Style input and textarea elements with width and background color */
+input, textarea {
+    width: 100%;
+    height: 2.5rem;
+    background-color: white;
+}
+
+/* Style the submit button with margins, font size, color, and background color */
+#btn {
+    margin: 5% auto;
+    font-size: 25px;
+    color: white;
+    background-color: #1ca67d;
+    border: none;
+}
+
+/* Adjust the height of the textarea */
+textarea {
+    height: 7vh;
+}

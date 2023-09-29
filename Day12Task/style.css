@@ -1,0 +1,46 @@
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 2.5s infinite;
+  font-size: 300%;
+}
+
+
+.container{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 3%;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem !important;
+    cursor: pointer;
+    color: black;
+    background-color: wheat;
+}
+
+h1{
+    font-weight: bolder;
+}
+
+.icon{
+    background-color: #3d8361;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    color: whitesmoke;
+}
+
+
+.head{
+    padding-bottom:5%;
+    font-size: 4rem !important;
+}

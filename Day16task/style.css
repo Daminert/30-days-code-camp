@@ -1,0 +1,61 @@
+/* Reset default styles for all elements */
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a background color and center-align text */
+body {
+    background: #292929;
+    text-align: center;
+}
+
+/* Style images with object-fit, border-radius, and a gradient background */
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    background: linear-gradient(to left, white, 80%, white);
+    box-shadow: 10px 10px 10px black;
+    margin-bottom: 4%;
+}
+
+/* Style the first line of h1 with a specific color */
+h1::first-line {
+    color: #80c1ff;
+}
+
+/* Style the main heading with center alignment, padding, and font size */
+h1 {
+    text-align: center;
+    padding: 5%;
+    font-size: 50px;
+}
+
+/* Style buttons with specific colors, border-radius, and padding */
+.btn {
+    color: white;
+    background-color: #3776A1;
+    border-radius: 45px;
+    border: none;
+    padding: 2%;
+    font-size: 40px;
+}
+
+/* Add a content pseudo-element to the button with "> >" */
+.btn::after {
+    content: "> >";
+}
+
+/* Style the footer with font size, padding, color, border, and border-radius */
+.footer {
+    font-size: 40px;
+    padding: 5%;
+    color: white;
+    border: 3px solid black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10%;
+    margin-top: 5%;
+}

@@ -1,0 +1,24 @@
+/* Styles for elements with class 'head-text' */
+.head-text {
+    color: whitesmoke;          /* Text color */
+    background-color: #ff6a7f; /* Background color */
+    padding: 5%;               /* Padding around the content */
+    margin: 2%;                /* Margin outside the element */
+}
+
+/* Styles for elements with class 'paragraph-text' */
+.paragraph-text {
+    color: rgb(0, 100, 255);   /* Text color using RGB values */
+    background-color: bisque;  /* Background color */
+    padding: 1%;               /* Padding around the content */
+    margin: 2%;                /* Margin outside the element */
+}
+
+/* Styles for elements with class 'box-3' */
+.box-3 {
+    width: 200px;              /* Width of the box */
+    height: 200px;             /* Height of the box */
+    border: 1px solid seagreen; /* Border style and color */
+    background-color: #b64c4c; /* Background color */
+    margin: 3% auto;           /* Margin with auto horizontal alignment */
+}

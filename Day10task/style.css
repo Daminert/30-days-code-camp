@@ -1,0 +1,17 @@
+/* Styles for elements with class 'contaiter' */
+.contaiter {
+    border: 1px solid black;    /* Border style and color */
+    padding: 2%;                /* Padding around the content */
+}
+
+/* Styles for elements with class 'inner-container' */
+.inner-container {
+    border: 20px solid darkslategray; /* Border style and color */
+    background-color: blanchedalmond; /* Background color */
+    padding: 5%;                      /* Padding around the content */
+}
+
+/* Styles for elements with class 'outer-container' */
+.outer-container {
+    background-color: #95b7ff; /* Background color */
+}

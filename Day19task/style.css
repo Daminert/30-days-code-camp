@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav, li, ul, .link{
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 2px;
+    text-align: right;
+    background-color: navy;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+nav li{
+    display: inline;    
+}
+
+/* Set a background image for the entire page */
+
+.image{
+    position: relative;
+}
+
+.img{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */ 
+    
+}
+
+.texts{
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+.home-head{
+    margin:1.5rem auto;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.home-text{
+    font-size: 20px;
+}
+
+.btn {
+    position: absolute;
+    top: 95%;
+    left: 44%;
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    opacity: 0.5;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+
+@media(max-width:500px){
+    nav, li, ul, .link{
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    
+   .image{
+       position: relative;
+   }
+   
+  .img{
+       width: 100%;
+       height: 100%;
+       
+   }
+   
+ .texts{
+      /* position:absolute;
+      position: fixed;
+      top: 40%; */
+      font-size:10px;
+      margin-top: 20%;
+      text-align: center;
+  }
+  
+  .home-text{
+      font-size: 5px;
+  }
+  
+  .home-head{
+      font-size: 5px;
+      margin: 15px auto;
+  }
+  
+  
+ .btn{
+     /* position: absolute;
+     position: fixed;
+     top: 68%;  */
+     /* text-align: center; */
+     /* left: 38%; */
+     padding: 3px;
+     font-weight: 0;
+     font-size: 15px;
+    } 
+    
+   .btnc{
+       text-align: center;
+       justify-content: center;
+       margin-bottom: -5%;       
+       width: 100%;
+   }
+    
+    .main{
+         position: fixed;
+     }    
+}
+
+.header-a{
+    margin-bottom: 10%;
+    
+}
+
+.head{
+    background-color: #353535;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.container {
+    display: inline;
+    /* overflow: hidden;  */
+    /* Clear the float to contain child elements */
+    width: 100%;
+}
+
+.img-sec {
+    float: left; /* Float the image to the left */
+    margin-left: 30px;
+    margin-right: 30px; /* Add some spacing between the image and text */
+    /* display: inline-block; */
+    width: 450px;
+    height: auto;
+    display: inline-block;    
+}
+
+.text-sec {
+    margin-let: 10px; /* Add spacing to separate the text from the image */
+    margin-right: 30px;
+    /* width: 100%; */
+}
+
+.text-child{
+     padding-bottom: 15px;
+}
+
+@media(max-width:800px){
+   .container{
+       width: 100%;
+       height: auto;
+       text-align: center;
+   }
+   
+  .img-sec{
+      width: 85%;
+      padding-bottom: 5%;
+  }
+  
+  .text-sec{
+      width: 100%;
+  }
+  
+  .text-child{
+      margin: 5%;
+  }
+  
+ .fill{
+     margin: 0 0 0;
+ }
+}
+
+.first {
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+input, textarea {
+    height: 1.5rem;
+    width: 30%;
+    background-color: white;
+}
+
+.push{
+    margin-left: 30px;
+    margin-right: 70px; 
+}
+
+form{
+    margin: 2% 0 0;
+    margin-left: 15px;
+    margin-right: 200px;
+}
+
+textarea{
+    height: 2.5rem;
+}
+
+.pass{
+    text-align: center;
+}
+
+#btn {
+    margin: 2% auto 0 ;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: none;
+    justify-content: center;
+}
+
+
+@media(max-width:800px){
+   textarea {
+    width: 300px;
+    height: 3.5rem;
+    background-color: white;
+}
+
+/* Style the labels with margins, width, font size, and color */
+.first {
+    margin: -5% 0 ;
+    width: 1.5rem;
+    color: black;
+}
+
+/* Style input and textarea elements with width and background color */
+input{
+    width: 300px;
+    height: 2.5rem;
+    background-color: white;
+}
+
+.first{
+    margin: 15% 0 0;
+}
+
+.img-sec{
+    display: none;
+}
+
+form{
+    padding: 100px auto 0;
+}
+
+.pass{
+    text-align: center;
+    justify-content: center;
+}
+
+#btn {
+    margin: 2% auto;
+    padding: 10px;
+    
+    color: white;
+    background-color: black;
+    border: none;
+    justify-content: center;
+}
+}
