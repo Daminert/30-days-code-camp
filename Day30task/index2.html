@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://i.postimg.cc/76PFRdNT/IMG-20230717-WA0006.jpg">
+</head>
+<body>
+    <section id="next">
+            <div class="bg-slate-100 p-4">
+      <h1 class="ml-20 font-black text-lg">Pokemon Info</h1>  
+    </div>    
+    
+            <div class="grid grid-cols-4 gap-4 container mx-auto mt-8  pt-2 bg-white-2900 max-md:grid-cols-1 max-md:p-4"> 
+        <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 140</p>
+                <p>Weight 20</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+            <div class="text-center shadow-lg rounded p-2 z-60">
+                <h2>bulbsaur</h2>
+                <div class="flex align-center justify-center p-0">
+            <img src="" alt="Pokemon Image">        </div>
+                <p>Height 7</p>
+                <p>Weight 40</p>
+                <p>Abilities:vocent</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center align-center p-4">
+       <a href="index.html" class="bg-red-500 text-white p-2 w-20 mr-4 text-center">Previous</a>       
+       <button type="submit" class="bg-blue-400 text-white p-2 w-20">Next</button>  
+    </div>
+    
+            </section>
+        
+        <!-- Add this script to your HTML file -->
+<script>
+    const pokemonNamesSecondSection = ["pidgey", "meowth", "gastly", "onix", "ponyta", "magnemite", "koffing", "ekans"];
+    
+    // Function to fetch Pokémon data and update the image for the second section
+    async function fetchPokemonDataAndUpdateImageSecondSection() {
+        const secondSectionImages = document.querySelectorAll('#next img');
+
+        for (let i = 0; i < pokemonNamesSecondSection.length; i++) {
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNamesSecondSection[i]}`);
+            const data = await response.json();
+            
+            const imgElement = secondSectionImages[i];
+            imgElement.src = data.sprites.front_default;
+        }
+    }
+    
+    // Call the function to fetch and update Pokémon images for the second section
+    fetchPokemonDataAndUpdateImageSecondSection();
+</script>
+
+</body>
+</html>
