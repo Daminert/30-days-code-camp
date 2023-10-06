@@ -2,7 +2,7 @@
 
 # My 30-Day Code Camp Journey
 
-![Code Camp](insert-image-link-here)
+![Code Camp](https://pbs.twimg.com/profile_images/1649631155371790336/ky3SAkHj.jpg )
 
 Welcome to my 30-day code camp journey, where I embarked on an immersive coding adventure that was both immense and mind-blowing. Over the course of this journey, I delved into the world of web development, honing my skills and expanding my knowledge. This README will provide insights into my coding experience and what I've learned along the way.
 
